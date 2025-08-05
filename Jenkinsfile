@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Jaaki26/Dock.git'
+                git branch:'main', url: 'https://github.com/Jaaki26/Dock.git'
             }
         }
 
