@@ -14,8 +14,8 @@ pipeline {
 
         stage('Build and Run Docker') {
             steps {
-                sh 'docker-compose down || true'
-                sh 'docker-compose up -d --build'
+                sh '/usr/bin/docker-compose down || true'
+                sh '/usr/bin/docker-compose up -d --build'
             }
         }
     }
